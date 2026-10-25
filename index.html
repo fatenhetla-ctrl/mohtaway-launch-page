@@ -11,14 +11,14 @@
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#19304a 0,transparent 45%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.8}
 a{color:inherit}.wrap{width:min(1080px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{font-weight:850;font-size:1.25rem;display:flex;gap:10px;align-items:center}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--mint),var(--blue));color:#102032;font-weight:900}.nav a{color:var(--muted);text-decoration:none;margin-right:18px;font-size:.95rem}
 .hero{padding:65px 0 52px;display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center}.eyebrow{display:inline-block;border:1px solid #33536a;border-radius:999px;padding:4px 13px;color:var(--mint);font-size:.9rem}.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.2;margin:18px 0}.hero h1 span{color:var(--mint)}.lead{color:var(--muted);font-size:1.12rem;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:12px 20px;border-radius:13px;font-weight:750;border:1px solid var(--line)}.primary{background:var(--mint);color:#102032;border-color:var(--mint)}.secondary{background:#17243a;color:var(--text)}.preview{background:linear-gradient(150deg,#172940,#101827);border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:0 24px 70px #0005;transform:rotate(-1deg)}.preview-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.88rem}.dots{letter-spacing:4px}.sample{margin-top:22px;background:#0b1424;border:1px solid #2a3c55;border-radius:18px;padding:20px}.sample small{color:var(--mint)}.sample h3{margin:7px 0 9px}.sample p{color:var(--muted);margin:0}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{font-size:.82rem;padding:5px 10px;border-radius:9px;background:#1b2b42;color:#dbe8fa}
-section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-intro{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:22px;border:1px solid var(--line);background:#111c2d;border-radius:20px}.icon{font-size:1.5rem}.card h3{margin:8px 0}.card p{color:var(--muted);margin:0}.cta{background:linear-gradient(120deg,#183a43,#172b46);border:1px solid #2c5a61;border-radius:25px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta p{color:var(--muted);margin:5px 0 0}.note{color:#aebbd0;font-size:.88rem;margin-top:18px}.footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer a{color:var(--mint);text-decoration:none}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px;gap:28px}.grid{grid-template-columns:1fr}.cta{display:block}.cta .actions{margin-top:18px}.nav-links{display:none}.hero h1{font-size:2.65rem}}
+section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-intro{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:22px;border:1px solid var(--line);background:#111c2d;border-radius:20px}.icon{font-size:1.5rem}.card h3{margin:8px 0}.card p{color:var(--muted);margin:0}.cta{background:linear-gradient(120deg,#183a43,#172b46);border:1px solid #2c5a61;border-radius:25px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta p{color:var(--muted);margin:5px 0 0}.note{color:#aebbd0;font-size:.88rem;margin-top:18px}.footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer a{color:var(--mint);text-decoration:none}.contact-link{display:inline-flex;align-items:center;gap:10px;max-width:100%;overflow-wrap:anywhere;color:var(--mint);font-weight:800;text-decoration:none;border:1px solid #33536a;background:#0b1727;padding:12px 16px;border-radius:13px}.contact-link:hover{border-color:var(--mint)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px;gap:28px}.grid{grid-template-columns:1fr}.cta{display:block}.cta .actions{margin-top:18px}.nav-links{display:none}.hero h1{font-size:2.65rem}.portal-card{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
 <header class="wrap nav">
   <div class="brand"><span class="mark">م</span><span>محتواي</span></div>
-  <nav class="nav-links"><a href="#features">المميزات</a><a href="#how">كيف يعمل</a><a href="privacy.html">الخصوصية</a></nav>
+  <nav class="nav-links"><a href="#features">المميزات</a><a href="#how">كيف يعمل</a><a href="#contact">تواصل معنا</a><a href="privacy.html">الخصوصية</a></nav>
 </header>
 <main>
   <div class="wrap hero">
@@ -27,11 +27,10 @@ section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-i
       <h1>فكرتك تستحق أن تصبح <span>محتوى مميزًا.</span></h1>
       <p class="lead">محتواي يساعدك على تحويل أفكارك إلى نصوص جاهزة لمنصات التواصل الاجتماعي، بأسلوب تختاره ووقت أقل في الكتابة.</p>
       <div class="actions">
-        <!-- استبدل # برابط APK مباشر بعد رفع الملف إلى خدمة موثوقة -->
         <a class="btn primary" href="https://expo.dev/accounts/faten18/projects/mohtaway/builds/91cf79c5-eddb-400f-8c68-ce06fa10c3af" target="_blank" rel="noopener noreferrer">تنزيل تطبيق محتواي</a>
         <a class="btn secondary" href="#features">اكتشف المميزات</a>
       </div>
-      <p class="note">يفتح رابط التنزيل صفحة بناء التطبيق على Expo. تحقق من تفاصيل الملف ومصدره قبل التثبيت.</p>
+      <p class="note">يفتح رابط التنزيل صفحة بناء التطبيق على Expo. تحقق من توفر ملف APK ومصدره قبل التثبيت.</p>
     </div>
     <div class="preview" aria-label="معاينة توضيحية لبطاقة محتوى">
       <div class="preview-top"><strong>محتواي</strong><span class="dots">•••</span></div>
@@ -44,21 +43,14 @@ section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-i
       <div class="tagrow"><span class="tag">إنشاء محتوى</span><span class="tag">المحفوظات</span><span class="tag">المفضلة</span></div>
     </div>
   </div>
-
-<section class="wrap" id="project-portal" style="padding:32px 0">
-  <div class="card" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);gap:24px;align-items:center">
-    <div>
-      <p class="eyebrow">بوابة المشاريع</p>
-      <h2>من فكرة إلى مشروع</h2>
-      <p>مساحة تجمع مشاريع محتواي وتعرّف بها، مع العمل على تطوير أفكار رقمية مفيدة.</p>
+  <section class="wrap" id="project-portal" style="padding:32px 0">
+    <div class="card portal-card" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);gap:24px;align-items:center">
+      <div><p class="eyebrow">بوابة المشاريع</p><h2>من فكرة إلى مشروع</h2><p>مساحة تجمع مشاريع محتواي وتعرّف بها، مع العمل على تطوير أفكار رقمية مفيدة.</p></div>
+      <img src="images/mohtaway-portal-portrait.png" alt="صورة تعريفية بمشاريع محتواي" loading="lazy" style="width:100%;max-height:360px;object-fit:cover;border-radius:18px">
     </div>
-    <img src="images/mohtaway-portal-portrait.png" alt="صورة صاحب مشاريع محتواي" loading="lazy" style="width:100%;max-height:360px;object-fit:cover;border-radius:18px">
-  </div>
-</section>
-
-<section class="wrap" id="features">
-    <h2 class="section-title">أدوات تساعدك على الاستمرار</h2>
-    <p class="section-intro">اجمع أفكارك ونظّم محتواك في مكان واحد.</p>
+  </section>
+  <section class="wrap" id="features">
+    <h2 class="section-title">أدوات تساعدك على الاستمرار</h2><p class="section-intro">اجمع أفكارك ونظّم محتواك في مكان واحد.</p>
     <div class="grid">
       <article class="card"><div class="icon">✍️</div><h3>إنشاء نصوص</h3><p>حوّل فكرتك إلى مسودة عربية يمكنك مراجعتها وتعديلها قبل النشر.</p></article>
       <article class="card"><div class="icon">🎯</div><h3>أسلوب يناسبك</h3><p>اختر نبرة المحتوى والمنصة المستهدفة بما يتوافق مع فكرتك.</p></article>
@@ -78,13 +70,21 @@ section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-i
   </section>
   <section class="wrap">
     <div class="cta">
-      <div><h2 class="section-title">جاهز لصناعة محتواك التالي؟</h2><p>احصل على نسخة Android من رابط البناء الرسمي للتطبيق.</p></div>
+      <div><h2 class="section-title">جاهز لصناعة محتواك التالي؟</h2><p>افتح صفحة البناء الرسمية للتطبيق وتحقق من توفر ملف Android.</p></div>
       <div class="actions"><a class="btn primary" href="https://expo.dev/accounts/faten18/projects/mohtaway/builds/91cf79c5-eddb-400f-8c68-ce06fa10c3af" target="_blank" rel="noopener noreferrer">تنزيل محتواي</a><a class="btn secondary" href="privacy.html">سياسة الخصوصية</a></div>
     </div>
     <p class="note">هذه صفحة تعريف مستقلة وليست متجر تطبيقات. رابط التنزيل يفتح صفحة البناء على Expo، وقد تتطلب بعض ملفات البناء تسجيل الدخول أو صلاحية الوصول.</p>
   </section>
+  <section class="wrap" id="contact">
+    <div class="card">
+      <p class="eyebrow">نحن هنا للمساعدة</p>
+      <h2 class="section-title">تواصل معنا</h2>
+      <p class="section-intro">للاستفسارات حول تطبيق محتواي أو خدمات صناعة وكتابة المحتوى، راسلنا عبر البريد الإلكتروني.</p>
+      <a class="contact-link" href="mailto:fatenhetla@gmail.com?subject=%D8%A7%D8%B3%D8%AA%Dفس%D8%A7%D8%B1%20%D8%AD%D9%88%D9%84%20%D9%85%D8%AD%D8%AA%D9%88%D8%A7%D9%8A" aria-label="إرسال بريد إلكتروني إلى محتواي">✉️ fatenhetla@gmail.com</a>
+    </div>
+  </section>
 </main>
-<footer class="wrap footer"><span>© <span id="year"></span> محتواي</span><span><a href="privacy.html">سياسة الخصوصية</a> · صفحة تعريف غير تابعة لـ Google</span></footer>
+<footer class="wrap footer"><span>© <span id="year"></span> محتواي</span><span><a href="#contact">تواصل معنا</a> · <a href="privacy.html">سياسة الخصوصية</a> · صفحة تعريف مستقلة</span></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
