@@ -35,7 +35,8 @@ section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-i
 .service-cta{margin-top:20px;border:1px solid #33536a;border-radius:18px;padding:20px;background:#0b1727}
 .faq-item{padding:15px 0;border-bottom:1px solid var(--line)}.faq-item:last-child{border-bottom:0}
 @media(max-width:760px){.tool-fields{grid-template-columns:1fr}}
-\n@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px;gap:28px}.grid{grid-template-columns:1fr}.cta{display:block}.cta .actions{margin-top:18px}.nav-links{display:none}.hero h1{font-size:2.65rem}.portal-card{grid-template-columns:1fr!important}}
+
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px;gap:28px}.grid{grid-template-columns:1fr}.cta{display:block}.cta .actions{margin-top:18px}.nav-links{display:none}.hero h1{font-size:2.65rem}.portal-card{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -133,17 +134,17 @@ section{padding:45px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.section-i
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
 const draftTemplates={
-'تعريف':(b,a,p)=>'مرحبًا '+(a||'بكم')+'! 👋\\n'+(b||'مشروعنا')+' هنا ليقدم لكم تجربة نهتم فيها بالجودة والتفاصيل. تابعونا لاكتشاف المزيد.\\n\\nما الذي تحبون معرفته عن خدماتنا؟ اكتبوا لنا في التعليقات.\\n\\n#مشروع_محلي #'+p,
-'تفاعل':(b,a,p)=>'خلّونا نعرف رأيكم يا '+(a||'أصدقاءنا')+' 💬\\nإذا كنتم تبحثون عن '+(b||'شيء مميز')+'، فما أهم ميزة تهمكم: الجودة، السعر، أم سرعة الخدمة؟\\nاكتبوا اختياركم في التعليقات!\\n\\n#شاركنا_رأيك #'+p,
-'عرض':(b,a,p)=>'🎉 خبر سار لـ'+(a||'عملائنا')+'!\\nنستعد لتقديم عرض من '+(b||'مشروعنا')+'. تابعونا لمعرفة التفاصيل والمدة والشروط.\\n\\nأضيفوا هنا تفاصيل العرض الحقيقية قبل النشر.\\n\\n#عرض #'+p,
-'ثقة':(b,a,p)=>'الثقة تبدأ من الوضوح 🤝\\nفي '+(b||'مشروعنا')+' نهتم بأن تكون المعلومات واضحة وأن تعرفوا ما الذي ستحصلون عليه قبل اتخاذ القرار.\\n\\nإذا كان لديكم سؤال، يسعدنا أن تطرحوه علينا.\\n\\n#خدمة_العملاء #'+p
+'تعريف':(b,a,p)=>'مرحبًا '+(a||'بكم')+'! 👋\n'+(b||'مشروعنا')+' هنا ليقدم لكم تجربة نهتم فيها بالجودة والتفاصيل. تابعونا لاكتشاف المزيد.\n\nما الذي تحبون معرفته عن خدماتنا؟ اكتبوا لنا في التعليقات.\n\n#مشروع_محلي #'+p,
+'تفاعل':(b,a,p)=>'خلّونا نعرف رأيكم يا '+(a||'أصدقاءنا')+' 💬\nإذا كنتم تبحثون عن '+(b||'شيء مميز')+'، فما أهم ميزة تهمكم: الجودة، السعر، أم سرعة الخدمة؟\nاكتبوا اختياركم في التعليقات!\n\n#شاركنا_رأيك #'+p,
+'عرض':(b,a,p)=>'🎉 خبر سار لـ'+(a||'عملائنا')+'!\nنستعد لتقديم عرض من '+(b||'مشروعنا')+'. تابعونا لمعرفة التفاصيل والمدة والشروط.\n\nأضيفوا هنا تفاصيل العرض الحقيقية قبل النشر.\n\n#عرض #'+p,
+'ثقة':(b,a,p)=>'الثقة تبدأ من الوضوح 🤝\nفي '+(b||'مشروعنا')+' نهتم بأن تكون المعلومات واضحة وأن تعرفوا ما الذي ستحصلون عليه قبل اتخاذ القرار.\n\nإذا كان لديكم سؤال، يسعدنا أن تطرحوه علينا.\n\n#خدمة_العملاء #'+p
 };
 document.getElementById('generateDraft').addEventListener('click',()=>{
  const b=document.getElementById('businessType').value.trim();
  const a=document.getElementById('audience').value.trim();
  const g=document.getElementById('goal').value;
  const p=document.getElementById('platform').value.replace(/[^ء-يA-Za-z0-9]/g,'_');
- document.getElementById('draftOutput').textContent=draftTemplates[g](b,a,p)+'\\n\\nمسودة أولية — راجعها وأضف التفاصيل الصحيحة.';
+ document.getElementById('draftOutput').textContent=draftTemplates[g](b,a,p)+'\n\nمسودة أولية — راجعها وأضف التفاصيل الصحيحة.';
 });
 document.getElementById('copyDraft').addEventListener('click',async()=>{
  const t=document.getElementById('draftOutput').textContent;
